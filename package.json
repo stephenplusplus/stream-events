@@ -28,6 +28,6 @@
     "duplexify": "^3.2.0"
   },
   "dependencies": {
-    "stubs": "^1.0.0"
+    "stubs": "^1.1.0"
   }
 }

@@ -15,8 +15,15 @@ var stubs = require('stubs')
  */
 function StreamEvents(stream) {
   stream = stream || this
-  stubs(stream, '_read', true, stream.emit.bind(stream, 'reading'))
-  stubs(stream, '_write', true, stream.emit.bind(stream, 'writing'))
+
+  var cfg = {
+    callthrough: true,
+    calls: 1
+  }
+
+  stubs(stream, '_read', cfg, stream.emit.bind(stream, 'reading'))
+  stubs(stream, '_write', cfg, stream.emit.bind(stream, 'writing'))
+
   return stream
 }
 
