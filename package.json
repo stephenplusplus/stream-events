@@ -4,6 +4,10 @@
   "description": "Get an event when you're being sent data or asked for it.",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "test": "node ./test"
   },
