@@ -1,4 +1,3 @@
-import { Stream } from "stream";
-declare function StreamEvents(stream: Stream): Stream;
+declare function StreamEvents<StreamType>(stream: StreamType): StreamType;
 declare namespace StreamEvents {}
 export = StreamEvents
