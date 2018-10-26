@@ -1,6 +1,6 @@
 {
   "name": "stream-events",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Get an event when you're being sent data or asked for it.",
   "main": "index.js",
   "types": "index.d.ts",
